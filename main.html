@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-portfolio</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="cursor-glow"></div>
+    <div class="container">
+      <div class="left-side">
+        <h1 class="left-side_title">Hello, I'm</h1>
+        <h2 class="left-side_name">Scott Bradley</h2>
+        <p class="left-side_text">Front end web developer</p>
+
+        <div class="left-side_image">
+          <img src="images/portrait.jpg" alt="me" />
+        </div>
+
+        <div class="left-side_navigation">
+          <ul class="left-side_navigation-list">
+            <li>
+              <a class="left-side_navigation-link" href="#about">ABOUT ME</a>
+            </li>
+            <li>
+              <a class="left-side_navigation-link" href="#projects">PROJECTS</a>
+            </li>
+            <li>
+              <a class="left-side_navigation-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <section class="about-me" id="about">
+          <div class="about-me">
+            <h1 class="about-me_title">About Me</h1>
+            <p class="about-me_text">
+              Hi, I’m Scott—a creative web developer with a background in
+              languages, teaching, and visual art. I originally studied German,
+              English linguistics, and creative writing at university. In 2019,
+              I moved to Germany and immersed myself in the language and
+              culture, reaching fluency and working as both a private English
+              teacher and a carer. These roles strengthened my communication
+              skills and deepened my ability to connect with people from diverse
+              backgrounds. In 2023, I began teaching myself how to code and
+              quickly discovered that web development offered the perfect blend
+              of creativity and structure. What started as a curiosity soon
+              turned into a passion. I now focus on front-end development,
+              building clean, responsive websites that are both functional and
+              visually engaging. My background in art—particularly oil painting
+              and portrait sketching—has given me a strong eye for colour,
+              composition, and design. I bring that same attention to detail and
+              creativity to every project I build.This portfolio is a reflection
+              of my journey so far. Feel free to explore my projects, and don’t
+              hesitate to get in touch if you'd like to collaborate.
+            </p>
+
+            <h2 class="about-me_title">Qualifications/Experience</h2>
+            <p class="about-me_text">
+              I have a bachalor of arts degree in languages from the Open
+              University focusing on German as a foreign languge, the history of
+              the English language and English creative writing (2015-2022)
+            </p>
+            <p class="about-me_text">
+              I have completed various couses on Udemy including Java Script and
+              advanced HTML/CSS/SASS (2023-2024)
+            </p>
+          </div>
+        </section>
+        <section class="projects" id="projects">
+          <h1 class="projects-heading">Projects</h1>
+          <div class="project">
+            <div class="project_image">
+              <img src="images/art.png" alt="" />
+            </div>
+
+            <div class="project_description">
+              <h2 class="heading heading_project-1">
+                <a href="https://www.scottbradley-art.com/" target="_blank"
+                  >ScottBradley-Art.com</a
+                >
+              </h2>
+              This website showcases my creative journey as an artist, featuring
+              a diverse collection of my artwork.The website is fully
+              responsive, ensuring a seamless experience across all devices—be
+              it a smartphone, tablet, or desktop. I utilized CSS to create a
+              visually appealing layout, making it simple for visitors to
+              explore my projects and artistic endeavors. The organized
+              navigation allows for easy access to galleries, artist statements,
+              and contact information.
+            </div>
+
+            <ul class="project_program-list">
+              <li>HTML</li>
+              <li>CSS/SASS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="project">
+            <div class="project_image">
+              <img src="images/physiopunkt.png" alt="" />
+            </div>
+
+            <div class="project_description">
+              <h2 class="heading heading_project-2">
+                <a href="https://physiopunkt-lev.de/" target="_blank">
+                  Physiopunkt.de</a
+                >
+              </h2>
+              This website was built for a mobile physiotherapy service. It has
+              a clean and modern design that works well on all screen
+              sizes—whether on a phone, tablet, or computer. I used CSS to make
+              everything look neat and easy to navigate. The layout helps
+              visitors quickly find key information like services, reviews, and
+              contact details. Smooth scrolling and a fixed menu make the site
+              feel professional and user-friendly.
+            </div>
+
+            <ul class="project_program-list">
+              <li>HTML</li>
+              <li>CSS/SASS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </section>
+        <section class="section-form" id="contact">
+          <div class="contact-container">
+            <h1 class="contact-heading">CONTACT ME HERE</h1>
+
+            <p class="contact-sub-text">Please feel free to drop me a line.</p>
+
+            <div class="form-container">
+              <form
+                class="form"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+              >
+                <div class="form__group">
+                  <input type="hidden" name="form-name" value="contact" />
+
+                  <p style="display: none">
+                    <label
+                      >dont fill this out if your human:
+                      <input name="bot-field" />
+                    </label>
+                  </p>
+
+                  <input
+                    name="name"
+                    type="text"
+                    class="form__group__name input"
+                    placeholder="NAME"
+                    required
+                  />
+                  <input
+                    name="email"
+                    type="email"
+                    class="form__group__email input"
+                    placeholder="E-MAIL"
+                    required
+                  />
+
+                  <div class="form__group__message">
+                    <label for="message "></label>
+                    <textarea
+                      class="message__box input"
+                      name="message"
+                      cols="25"
+                      rows="10 git"
+                      placeholder="write your message here...."
+                    ></textarea>
+                  </div>
+
+                  <div class="form__group__btn">
+                    <button class="form-btn" type="submit">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+.contact-container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.form-container {
+  margin: 0 auto;
+}
+
+.section-form {
+  position: relative;
+  padding: 2rem 2rem 2rem 2rem;
+
+  height: 100%;
+
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  transform: translateY(3rem);
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  color: $color-heading;
+}
+
+.contact-sub-text {
+  font-weight: 600;
+  font-size: 2.6rem;
+  @include respond(500px) {
+    font-size: 2rem;
+  }
+}
+
+.form {
+  margin: 0 auto;
+  margin-bottom: 5rem;
+
+  width: 95%;
+  height: 45rem;
+  background-image: linear-gradient(
+    105deg,
+    rgba(255, 255, 255, 0.248) 0%,
+    rgba(255, 255, 255, 0.2) 100%,
+    transparent 50%
+  );
+
+  background-size: cover;
+  margin-top: 5rem;
+
+  border-radius: 1rem;
+  box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.307);
+
+  .form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 4rem 2rem 4rem 2rem;
+    margin: 0 auto;
+
+    .input {
+      padding: 1rem;
+      border: none;
+      border-radius: 2px;
+      font-size: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.787);
+    }
+
+    .input:focus {
+      outline: none;
+      box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.307);
+    }
+
+    &__name {
+      width: 30rem;
+
+      @include respond(600px) {
+        width: 93%;
+      }
+    }
+
+    &__email {
+      width: 30rem;
+
+      @include respond(600px) {
+        width: 93%;
+      }
+    }
+
+    &__message {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .form-btn {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.787);
+      color: grey;
+    }
+
+    :hover .form-btn {
+      cursor: pointer;
+
+      color: black;
+    }
+  }
+}
+
+.form__group__message {
+  .message__box {
+    font-size: 3rem;
+  }
+}
