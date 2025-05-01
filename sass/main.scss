@@ -116,6 +116,9 @@ body {
     left: 0;
     height: auto;
   }
+  @include respond(500px) {
+    padding: 2rem;
+  }
 }
 
 .right-side {
